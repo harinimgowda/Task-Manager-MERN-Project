@@ -1,5 +1,5 @@
 const notFound = (req, res, next) => {
-  const error = new Error("Page/Resource does not exists!");
+  const error = new Error("Page or resource does not exist.");
   error.status = 404;
   next(error);
 };
